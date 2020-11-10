@@ -1,0 +1,50 @@
+2020-11-10 17:14:14,988 INFO    MainThread:15484 [wandb_setup.py:_flush():68] setting env: {}
+2020-11-10 17:14:14,988 INFO    MainThread:15484 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2020-11-10 17:14:14,988 INFO    MainThread:15484 [wandb_setup.py:_flush():68] setting login settings: {}
+2020-11-10 17:14:14,988 INFO    MainThread:15484 [wandb_init.py:_log_setup():302] Logging user logs to /home/ken/vision-transformers-cifar10/wandb/run-20201110_171414-3vn6huyr/logs/debug.log
+2020-11-10 17:14:14,988 INFO    MainThread:15484 [wandb_init.py:_log_setup():303] Logging internal logs to /home/ken/vision-transformers-cifar10/wandb/run-20201110_171414-3vn6huyr/logs/debug-internal.log
+2020-11-10 17:14:15,755 INFO    MainThread:15484 [wandb_run.py:_console_start():1213] atexit reg
+2020-11-10 17:14:15,756 INFO    MainThread:15484 [wandb_run.py:_redirect():1083] redirect: SettingsConsole.REDIRECT
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [wandb_run.py:_redirect():1086] Redirecting console.
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [redirect.py:install():204] install start
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [redirect.py:install():219] install stop
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [redirect.py:install():204] install start
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [redirect.py:install():219] install stop
+2020-11-10 17:14:15,757 INFO    MainThread:15484 [wandb_run.py:_redirect():1130] Redirects installed.
+2020-11-10 17:14:15,767 INFO    MainThread:15484 [wandb_run.py:_config_callback():545] config_cb None None {'_wandb': {'cli_version': '0.10.10', 'python_version': '3.6.12', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch', 'code_path': 'code/train_cifar10.py'}, 'lr': 0.001, 'opt': 'adam', 'resume': False, 'aug': False, 'amp': True, 'mixup': False, 'net': 'res18', 'bs': '256', 'n_epochs': 50, 'patch': 4, 'cos': False}
+2020-11-10 17:14:18,177 INFO    MainThread:15484 [wandb_config.py:__setitem__():135] config set scheduler = ReduceLROnPlateau - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f8bcf3b7358>>
+2020-11-10 17:14:18,177 INFO    MainThread:15484 [wandb_run.py:_config_callback():545] config_cb scheduler ReduceLROnPlateau {'_wandb': {'cli_version': '0.10.10', 'python_version': '3.6.12', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch', 'code_path': 'code/train_cifar10.py'}, 'lr': 0.001, 'opt': 'adam', 'resume': False, 'aug': False, 'amp': True, 'mixup': False, 'net': 'res18', 'bs': '256', 'n_epochs': 50, 'patch': 4, 'cos': False, 'scheduler': 'ReduceLROnPlateau'}
+2020-11-10 17:14:18,178 INFO    MainThread:15484 [wandb_watch.py:watch():33] Watching
+2020-11-10 17:14:24,410 INFO    MainThread:15484 [wandb_run.py:_atexit_cleanup():1186] got exitcode: 255
+2020-11-10 17:14:24,410 INFO    MainThread:15484 [wandb_run.py:_restore():1158] restore
+2020-11-10 17:14:24,410 INFO    MainThread:15484 [redirect.py:uninstall():223] uninstall start
+2020-11-10 17:14:24,410 INFO    MainThread:15484 [redirect.py:_stop():278] _stop: stdout
+2020-11-10 17:14:24,411 INFO    stdout    :15484 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():284] _stop closed: stdout
+2020-11-10 17:14:24,411 INFO    stdout    :15484 [redirect.py:_pipe_relay():136] relay done done: stdout
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():290] _stop joined: stdout
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():292] _stop rd closed: stdout
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:uninstall():227] uninstall done
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:uninstall():223] uninstall start
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():278] _stop: stderr
+2020-11-10 17:14:24,411 INFO    stderr    :15484 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():284] _stop closed: stderr
+2020-11-10 17:14:24,411 INFO    stderr    :15484 [redirect.py:_pipe_relay():136] relay done done: stderr
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():290] _stop joined: stderr
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:_stop():292] _stop rd closed: stderr
+2020-11-10 17:14:24,411 INFO    MainThread:15484 [redirect.py:uninstall():227] uninstall done
+2020-11-10 17:14:24,413 INFO    MainThread:15484 [wandb_run.py:_wait_for_finish():1300] got exit ret: uuid: "198255fb772c462b8df1fb4835aca098"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 2
+      media_count: 1
+      other_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 31892
+      total_bytes: 31892
+    }
+  }
+}
+

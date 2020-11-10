@@ -1,0 +1,855 @@
+2020-11-10 17:15:30,714 INFO    MainThread:15625 [internal.py:wandb_internal():63] W&B internal server running at pid: 15625
+2020-11-10 17:15:30,716 DEBUG   SenderThread:15625 [sender.py:send():90] send: header
+2020-11-10 17:15:30,717 INFO    WriterThread:15625 [datastore.py:open_for_write():76] open: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/run-1ho3j3k2.wandb
+2020-11-10 17:15:30,717 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: check_version
+2020-11-10 17:15:30,717 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:15:30,717 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: check_version
+2020-11-10 17:15:30,720 DEBUG   Thread-4  :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): pypi.org:443
+2020-11-10 17:15:30,794 DEBUG   Thread-4  :15625 [connectionpool.py:_make_request():442] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51661
+2020-11-10 17:15:30,811 DEBUG   SenderThread:15625 [sender.py:send():90] send: run
+2020-11-10 17:15:30,814 DEBUG   SenderThread:15625 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-10 17:15:30,823 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,064 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,069 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: run_start
+2020-11-10 17:15:31,070 INFO    SenderThread:15625 [dir_watcher.py:__init__():164] watching files in: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files
+2020-11-10 17:15:31,070 INFO    SenderThread:15625 [sender.py:_start_run_threads():490] run started: 1ho3j3k2 with start time 1604996130
+2020-11-10 17:15:31,070 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:15:31,071 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:15:31,081 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-10 17:15:31,086 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,090 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,093 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,095 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'version'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,097 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,100 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,109 DEBUG   HandlerThread:15625 [cmd.py:execute():719] Popen(['git', 'merge-base', 'HEAD', 'be3f35b866d315f9053142a167dc86621e0363ed'], cwd=/home/ken/vision-transformers-cifar10, universal_newlines=False, shell=None, istream=None)
+2020-11-10 17:15:31,114 DEBUG   SenderThread:15625 [sender.py:send():90] send: files
+2020-11-10 17:15:31,114 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-10 17:15:31,115 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file code/train_cifar10.py with policy now
+2020-11-10 17:15:31,115 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file diff.patch with policy now
+2020-11-10 17:15:31,120 DEBUG   Thread-11 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,120 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:15:31,121 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:15:31,121 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:15:31,128 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,129 DEBUG   Thread-12 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,132 DEBUG   Thread-13 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,370 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,371 DEBUG   Thread-12 :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,372 DEBUG   Thread-11 :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,372 DEBUG   Thread-13 :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,375 DEBUG   SenderThread:15625 [sender.py:send():90] send: config
+2020-11-10 17:15:31,382 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:31,387 DEBUG   Thread-11 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-10 17:15:31,390 DEBUG   Thread-12 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-10 17:15:31,393 DEBUG   Thread-13 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-10 17:15:31,567 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:31,780 DEBUG   Thread-11 :15625 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/arutema47/cifar10-challange/1ho3j3k2/wandb-metadata.json?Expires=1605082531&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=bC6aaBLWMV2CzYwqoPNDFL6A2px%2FlwTLeC2FI2tN5kw79PxBSTo7fUzxv9bMJrAhg%2FTbmL3orTKTm9DSYVpeRAETEjMbUcqHnWfR2n6ELZfXHo%2Fiis%2BTeQgvdjt9ObVWXJFjscYYraWyU2l%2BpjMYEyvnWJ3vZUIOJBf1WN%2Bn%2F4aDgkJMrs1SVUMQpk2lOclILotgDiQ5aOM1UtgG9WfKpHpxf4zCDoO7u3Xopr%2B2XmHAzAqVATpAeSZ7xWdiUrMECrDvxeblBT7hQLP3bjYlFaLq1BaC312CzRAiXc2mqQxl8JH4UykGovOdLH9YHSH93vhL%2FGMwZF7vkZT2HKciMQ%3D%3D HTTP/1.1" 200 0
+2020-11-10 17:15:31,781 DEBUG   Thread-13 :15625 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/arutema47/cifar10-challange/1ho3j3k2/diff.patch?Expires=1605082531&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=lDAAd8%2BQEbkoSadTO7zyc1wAIFjD0Zn2nUrhatVaCNkdUv7%2FKhMEakAzkelYWbAGkfziUtJ5sn%2B0Ne3gE7tm9yZRyEh3TkgDqJ26JSyGuCtROoAGZiueIP3pLFMQziX8if8b4ATPSvacf9rU4k1J0jkk6Mg2jD7pwqQXsEzibOgusoYL1cTdc7%2BRmENT2djj%2FpdEvjwRuC8zSGAKI37D7xc8SHxMOfd0OAVUbY3eGSOsSWeHP1%2FkIJpe2qR7uz5u3SrHdrsPqKMEDc65ZQNOJgDc4cspt63T4hICuGM%2BG6KMG9MSg6qMxM49dlu98lafwJ9NJ5NZpms1sRZ9ADixug%3D%3D HTTP/1.1" 200 0
+2020-11-10 17:15:31,782 DEBUG   Thread-12 :15625 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/arutema47/cifar10-challange/1ho3j3k2/code/train_cifar10.py?Expires=1605082531&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DRiBF8VqFjsylTve17Tf7I%2FMWX47XzhRw0k%2FtqT2SNvw0lrG5OUnExnnC3JDbtCHm%2FxPHVmIi9XgzCu1Dna2MOS9ApdGOOriH%2B4UFXoYqNwmUW9xOn7V1RqEx2P9sYRHuIDVUoG5C%2BX8VAtzgXF9qSyndknmK6ptysk%2FhHstGMtU79EaeSwaaqoAt6AlDUYe5weFjTQAr6c3g0Hbd9rfJ2hWNZYLmJl2M5vGCit3kjsjjSyoalv%2B4AUyeNq0axFClRdPG0Ywt8rxHNTYnxo627cV2VMtaWtQuaZj1yZ7QcYEZMr%2FAp4WvGCLAyJk5xoXO2ABV5WJxRq2JJdQdOD%2BWg%3D%3D HTTP/1.1" 200 0
+2020-11-10 17:15:31,783 INFO    Thread-13 :15625 [upload_job.py:push():131] Uploaded file /tmp/tmpjopjwpwgwandb/o5cpofl2-diff.patch
+2020-11-10 17:15:31,784 INFO    Thread-12 :15625 [upload_job.py:push():131] Uploaded file /tmp/tmpjopjwpwgwandb/2krd5eaa-code/train_cifar10.py
+2020-11-10 17:15:31,785 INFO    Thread-11 :15625 [upload_job.py:push():131] Uploaded file /tmp/tmpjopjwpwgwandb/1t4b9av7-wandb-metadata.json
+2020-11-10 17:15:32,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/config.yaml
+2020-11-10 17:15:32,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/diff.patch
+2020-11-10 17:15:32,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-metadata.json
+2020-11-10 17:15:32,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/requirements.txt
+2020-11-10 17:15:32,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/code/train_cifar10.py
+2020-11-10 17:15:32,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:32,074 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:15:32,074 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/code
+2020-11-10 17:15:33,071 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:33,583 DEBUG   SenderThread:15625 [sender.py:send():90] send: config
+2020-11-10 17:15:33,589 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:33,830 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:33,838 DEBUG   Thread-5  :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:34,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/config.yaml
+2020-11-10 17:15:34,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:34,139 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:34,380 DEBUG   SenderThread:15625 [sender.py:send():90] send: files
+2020-11-10 17:15:34,381 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file media/graph/g.r.a.p.h._.0_summary_5c318a76.graph.json with policy now
+2020-11-10 17:15:34,381 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:15:34,382 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:15:34,386 DEBUG   Thread-14 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:34,446 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:34,648 DEBUG   Thread-14 :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:34,654 DEBUG   Thread-14 :15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-10 17:15:35,057 DEBUG   Thread-14 :15625 [connectionpool.py:_make_request():442] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/arutema47/cifar10-challange/1ho3j3k2/media/graph/g.r.a.p.h._.0_summary_5c318a76.graph.json?Expires=1605082534&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gh0gkIPZIwBqffnxP60UfbfrRc60uMBH9m9mX6eK%2FW7Ji6EDDtf1nLVYItx9fJ57NBsYENpjk4nqVKdcUxUYkJb%2FUbD9VTYdJKYBALcL8OqdqFwznj949%2BJ5Eg5XCYeFziGPPYqo%2FgAKPByLubXfeQEBlZY7CrDsW5NBBUpU0%2FUH%2ByzBDrcxvTb2xOLz0dupAVzeMdy2pNeTqIbjuWZTnJsnexcN%2BWSpF93XAH%2B%2B92IVlk5mjgw7kPMANmORWcszZmAAkay3wX8BjpepvgWpzMnAQ%2FvaheFVSEnL8VbEX0rTaQNKfUBcJv5vxxy6P74gsDelLtQgmQE199oYyIMJYQ%3D%3D HTTP/1.1" 200 0
+2020-11-10 17:15:35,059 INFO    Thread-14 :15625 [upload_job.py:push():131] Uploaded file /tmp/tmpjopjwpwgwandb/3rlaqac4-media/graph/g.r.a.p.h._.0_summary_5c318a76.graph.json
+2020-11-10 17:15:35,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:15:35,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:35,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/media/graph/g.r.a.p.h._.0_summary_5c318a76.graph.json
+2020-11-10 17:15:35,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/media/graph
+2020-11-10 17:15:35,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_created():212] file/dir created: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/media
+2020-11-10 17:15:36,072 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:36,696 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:37,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:38,073 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:38,900 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:39,074 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:39,153 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:40,074 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:41,075 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:42,075 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:43,075 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:43,368 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:43,659 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:44,076 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:45,076 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:46,077 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:46,384 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:15:46,385 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:15:46,385 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:15:46,388 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:15:46,629 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:15:47,077 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:47,827 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:48,007 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:48,078 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:49,078 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:50,078 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:51,079 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:52,079 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:52,294 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:52,562 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:53,080 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:54,080 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:55,081 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:56,081 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:56,772 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:15:56,971 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:15:57,081 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:58,082 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:15:59,082 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:00,083 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:01,067 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:01,083 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:01,231 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:01,632 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:16:01,632 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:16:01,632 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:16:01,635 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:16:02,084 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:02,091 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:16:03,087 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:03,525 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:04,087 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:04,120 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:16:04,121 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:16:04,121 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:16:05,087 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:16:05,087 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:05,692 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:06,087 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:06,326 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:07,088 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:08,088 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:09,089 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:10,089 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:10,150 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:10,333 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:11,090 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:12,090 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:13,090 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:14,091 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:14,605 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:14,892 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:15,091 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:16,092 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:17,092 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:17,097 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:16:17,097 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:16:17,097 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:16:17,100 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:16:17,594 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:16:18,092 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:19,063 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:19,093 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:19,243 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:20,093 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:21,094 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:22,094 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:23,095 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:23,517 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:23,802 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:24,095 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:25,095 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:26,096 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:27,096 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:27,971 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:28,097 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:28,206 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:29,097 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:30,098 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:31,098 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:32,099 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:32,431 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:32,597 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:16:32,597 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:16:32,597 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:16:32,600 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:16:32,812 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:16:32,873 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:16:32,873 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:16:32,873 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:16:33,099 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:16:33,099 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:34,099 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:35,100 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:36,100 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:36,883 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:37,101 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:38,101 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:39,102 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:40,102 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:41,103 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:41,338 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:41,536 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:42,103 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:43,104 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:44,104 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:45,105 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:45,800 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:46,105 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:47,106 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:47,815 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:16:47,815 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:16:47,815 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:16:47,819 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:16:48,071 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:16:48,106 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:49,107 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:50,107 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:50,250 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:51,107 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:52,108 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:53,108 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:54,109 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:54,707 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:16:54,933 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:16:55,109 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:56,110 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:57,110 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:58,110 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:59,111 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:16:59,162 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:00,111 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:01,112 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:02,112 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:02,415 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:17:02,416 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:17:02,416 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:17:03,073 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:17:03,074 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:17:03,074 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:17:03,076 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:17:03,113 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:17:03,113 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:03,329 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:17:03,628 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:04,113 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:05,114 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:06,114 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:07,114 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:08,084 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:08,115 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:08,348 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:17:09,115 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:10,116 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:11,116 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:12,117 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:12,539 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:13,119 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:14,120 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:15,120 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:16,120 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:16,996 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:17,121 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:18,121 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:18,332 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:17:18,332 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:17:18,332 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:17:18,335 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:17:18,588 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:17:19,122 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:20,122 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:21,123 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:21,455 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:21,763 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:17:22,123 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:23,124 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:24,124 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:25,124 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:25,914 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:26,125 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:27,125 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:28,126 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:29,126 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:30,126 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:30,375 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:31,127 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:32,074 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:17:32,075 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:17:32,078 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:17:32,127 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:17:32,127 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:32,822 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:17:33,128 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:33,591 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:17:33,591 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:17:33,591 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:17:33,594 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:17:33,846 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:17:34,128 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:34,831 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:35,128 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:36,129 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:37,129 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:38,130 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:39,131 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:39,282 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:40,131 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:41,131 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:42,132 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:43,133 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:43,738 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:43,985 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:17:44,133 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:45,133 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:46,134 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:47,134 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:48,135 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:48,192 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:48,850 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:17:48,850 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:17:48,850 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:17:48,853 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:17:49,045 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:17:49,136 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:50,136 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:51,136 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:52,137 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:52,651 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:53,137 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:54,138 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:55,138 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:56,138 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:57,104 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:17:57,139 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:57,399 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:17:58,139 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:17:59,140 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:00,120 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:18:00,121 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:18:00,121 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:18:00,140 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:18:00,141 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:01,141 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:01,559 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:02,141 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:03,142 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:04,049 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:18:04,049 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:18:04,049 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:18:04,052 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:18:04,142 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:04,261 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:18:05,143 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:06,015 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:06,143 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:07,144 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:08,144 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:09,144 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:10,145 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:10,473 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:10,712 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:18:11,145 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:12,146 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:13,146 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:14,146 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:14,941 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:15,147 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:16,147 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:17,148 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:18,148 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:19,149 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:19,263 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:18:19,264 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:18:19,264 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:18:19,265 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:18:19,434 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:18:19,436 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:20,149 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:21,149 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:22,150 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:23,150 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:23,843 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:24,020 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:18:24,151 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:25,151 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:26,152 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:27,152 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:28,152 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:28,308 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:29,144 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:18:29,170 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:18:29,179 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:18:29,180 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:18:29,180 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:30,180 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:18:30,180 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:31,180 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:32,181 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:32,757 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:33,181 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:34,181 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:34,437 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:18:34,437 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:18:34,437 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:18:34,440 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:18:34,676 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:18:35,182 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:36,182 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:37,183 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:37,211 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:37,953 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:18:38,184 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:39,187 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:40,187 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:41,188 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:41,666 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:42,188 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:43,189 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:44,189 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:45,189 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:46,115 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:46,190 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:47,190 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:48,191 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:49,191 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:49,678 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:18:49,679 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:18:49,679 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:18:49,683 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:18:49,934 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:18:50,191 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:50,568 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:50,796 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:18:51,192 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:52,192 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:53,193 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:54,193 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:55,029 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:18:55,194 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:56,194 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:57,194 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:58,165 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:18:58,170 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:18:58,183 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:18:58,195 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:18:58,195 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:59,195 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:18:59,491 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:00,196 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:01,196 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:02,197 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:03,197 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:03,946 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:04,198 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:04,580 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:19:04,937 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:19:04,938 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:19:04,938 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:19:04,941 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:19:05,193 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:19:05,198 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:06,199 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:07,199 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:08,200 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:08,394 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:09,200 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:10,201 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:11,201 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:12,202 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:12,848 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:13,202 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:14,202 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:15,203 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:16,203 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:17,204 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:17,302 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:17,584 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:19:18,204 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:19,204 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:20,195 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:19:20,195 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:19:20,195 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:19:20,198 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:19:20,205 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:20,451 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:19:21,205 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:21,762 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:22,206 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:23,206 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:24,207 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:25,207 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:26,211 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:26,216 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:27,166 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:19:27,170 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:19:27,180 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:19:27,212 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:19:27,212 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:28,212 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:29,212 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:30,213 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:30,677 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:31,213 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:31,306 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:19:32,214 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:33,214 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:34,214 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:35,139 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:35,215 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:35,456 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:19:35,456 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:19:35,456 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:19:35,459 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:19:35,710 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:19:36,215 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:37,216 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:38,216 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:39,217 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:39,594 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:40,217 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:41,217 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:42,218 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:43,219 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:44,055 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:44,219 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:44,312 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:19:45,219 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:46,220 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:47,220 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:48,221 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:48,507 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:49,221 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:50,222 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:50,712 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:19:50,713 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:19:50,713 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:19:50,715 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:19:50,968 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:19:51,222 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:52,223 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:52,965 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:53,223 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:54,223 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:55,225 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:55,479 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:19:55,480 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:19:55,492 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:19:55,614 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:19:56,225 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:19:56,226 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:57,226 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:57,422 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:19:58,226 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:19:59,227 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:00,227 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:01,227 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:01,880 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:02,227 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:03,228 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:04,228 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:05,229 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:05,972 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:20:05,972 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:20:05,972 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:20:05,975 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:20:06,224 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:20:06,229 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:06,327 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:06,940 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:20:07,229 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:08,230 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:09,230 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:10,230 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:10,788 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:11,231 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:12,231 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:13,232 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:14,232 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:15,232 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:15,240 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:16,233 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:17,233 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:18,234 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:19,234 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:19,688 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:19,939 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:20:20,234 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:21,227 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:20:21,227 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:20:21,227 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:20:21,229 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:20:21,235 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:21,475 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:20:22,235 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:23,235 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:24,140 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:24,236 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:24,669 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:20:24,675 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:20:24,685 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:20:25,236 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:20:25,236 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:26,236 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:27,237 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:28,237 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:28,593 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:29,238 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:30,238 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:31,238 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:32,239 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:33,044 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:33,239 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:34,240 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:35,240 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:36,241 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:36,479 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:20:36,479 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:20:36,480 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:20:36,482 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:20:36,652 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:20:37,241 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:37,501 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:38,241 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:39,242 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:40,242 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:41,243 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:41,955 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:42,243 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:43,243 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:44,244 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:45,244 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:46,245 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:46,411 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:47,245 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:48,245 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:49,246 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:50,246 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:50,873 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:51,247 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:51,467 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:20:51,655 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:20:51,655 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:20:51,655 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:20:51,659 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:20:51,876 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:20:52,248 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:53,186 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:20:53,208 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:20:53,216 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:20:53,248 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:20:53,248 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:54,249 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:55,249 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:55,339 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:20:56,250 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:57,250 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:58,250 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:59,251 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:20:59,790 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:00,251 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:01,252 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:02,252 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:03,253 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:04,249 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:04,253 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:05,254 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:06,254 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:06,878 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:21:06,879 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:21:06,879 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:21:06,880 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:21:07,255 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:07,335 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:21:08,255 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:08,709 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:09,256 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:10,256 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:11,257 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:12,258 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:13,162 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:13,258 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:14,259 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:15,259 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:16,260 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:17,262 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:17,622 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:18,261 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:19,261 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:20,262 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:21,262 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:22,092 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:22,116 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:21:22,117 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:21:22,130 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:21:22,262 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:21:22,263 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:22,338 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:21:22,338 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:21:22,339 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:21:22,341 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:21:22,588 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:21:22,694 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:21:23,263 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:24,263 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:25,264 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:26,264 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:26,536 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:27,265 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:28,265 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:29,265 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:30,266 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:30,994 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:31,266 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:32,267 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:33,267 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:34,268 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:35,268 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:35,450 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:36,268 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:37,269 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:37,590 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:21:37,591 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:21:37,591 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:21:37,593 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:21:37,841 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:21:38,269 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:39,269 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:39,901 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:40,270 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:41,270 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:42,271 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:43,271 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:44,271 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:44,358 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:45,272 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:46,272 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:47,273 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:48,273 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:48,819 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:49,274 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:50,274 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:51,274 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:51,474 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:21:51,480 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:21:51,494 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:21:52,275 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:21:52,275 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:52,844 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:21:52,844 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:21:52,845 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:21:52,847 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:21:53,197 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:21:53,273 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:53,278 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:53,914 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:21:54,278 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:55,278 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:56,279 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:57,279 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:57,731 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:21:58,280 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:21:59,280 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:00,281 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:01,281 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:02,187 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:02,282 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:03,282 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:04,283 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:05,283 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:06,283 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:06,642 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:07,284 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:08,200 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:22:08,200 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:22:08,200 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:22:08,202 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:22:08,284 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:08,452 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:22:09,285 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:10,285 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:11,103 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:11,286 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:12,286 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:13,286 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:14,287 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:15,287 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:15,554 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:16,288 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:17,288 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:18,288 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:19,289 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:20,013 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:20,289 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:20,629 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:22:20,635 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:22:20,646 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:22:21,290 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:22:21,290 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:22,290 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:23,290 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:23,456 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:22:23,456 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:22:23,456 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:22:23,458 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:22:23,707 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:22:24,291 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:24,458 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:25,054 DEBUG   Thread-5  :15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /files/arutema47/cifar10-challange/1ho3j3k2/file_stream HTTP/1.1" 200 None
+2020-11-10 17:22:25,291 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:26,292 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:27,292 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:28,293 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:28,913 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:29,293 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:30,294 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:31,294 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:32,294 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:33,295 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:33,373 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:34,295 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:35,295 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:36,296 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:37,296 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:37,820 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:38,297 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:38,710 DEBUG   HandlerThread:15625 [handler.py:handle_request():55] handle_request: status
+2020-11-10 17:22:38,710 DEBUG   SenderThread:15625 [sender.py:send():90] send: request
+2020-11-10 17:22:38,710 DEBUG   SenderThread:15625 [sender.py:send_request():99] send_request: status
+2020-11-10 17:22:38,712 DEBUG   SenderThread:15625 [connectionpool.py:_new_conn():943] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-10 17:22:38,962 DEBUG   SenderThread:15625 [connectionpool.py:_make_request():442] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-10 17:22:39,299 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:40,299 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:41,300 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:42,274 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:42,300 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:43,301 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:44,301 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:45,302 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:46,302 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:46,724 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:47,303 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:48,303 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:49,006 DEBUG   SenderThread:15625 [sender.py:send():90] send: history
+2020-11-10 17:22:49,011 DEBUG   SenderThread:15625 [sender.py:send():90] send: summary
+2020-11-10 17:22:49,023 INFO    SenderThread:15625 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-10 17:22:49,304 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/wandb-summary.json
+2020-11-10 17:22:49,304 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:50,304 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:51,186 DEBUG   SenderThread:15625 [sender.py:send():90] send: stats
+2020-11-10 17:22:51,305 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log
+2020-11-10 17:22:52,305 INFO    Thread-8  :15625 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/ken/vision-transformers-cifar10/wandb/run-20201110_171530-1ho3j3k2/files/output.log

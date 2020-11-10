@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.4.0-52-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-11-10T07:54:33.176942",
+    "startedAt": "2020-11-10T07:54:32.355010",
+    "docker": null,
+    "gpu": "TITAN RTX",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--net",
+        "res34"
+    ],
+    "state": "running",
+    "codePath": "train_cifar10.py",
+    "program": "train_cifar10.py",
+    "git": {
+        "remote": "https://github.com/kentaroy47/vision-transformers-cifar10.git",
+        "commit": "be3f35b866d315f9053142a167dc86621e0363ed"
+    },
+    "email": "kentaroy@stanford.edu",
+    "root": "/home/ken/vision-transformers-cifar10",
+    "host": "ken-ubuntu",
+    "username": "ken",
+    "executable": "/home/ken/anaconda3/envs/pytorch_p36/bin/python"
+}

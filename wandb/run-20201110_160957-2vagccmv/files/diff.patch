@@ -1,0 +1,123 @@
+diff --git a/log/log_res18_patch4.txt b/log/log_res18_patch4.txt
+index 3d99376..3f42107 100644
+--- a/log/log_res18_patch4.txt
++++ b/log/log_res18_patch4.txt
+@@ -41,3 +41,48 @@ Wed Oct 28 02:11:19 2020 Epoch 38, lr: 0.0000010, val loss: 31.56442, acc: 93.00
+ Wed Oct 28 02:11:56 2020 Epoch 39, lr: 0.0000010, val loss: 31.77023, acc: 93.01000
+ Wed Oct 28 02:12:33 2020 Epoch 40, lr: 0.0000010, val loss: 31.19953, acc: 92.92000
+ Wed Oct 28 02:13:10 2020 Epoch 41, lr: 0.0000010, val loss: 31.44710, acc: 92.97000
++Tue Nov 10 15:48:02 2020 Epoch 0, lr: 0.0001000, val loss: 106.96654, acc: 61.93000
++Tue Nov 10 15:48:23 2020 Epoch 1, lr: 0.0001000, val loss: 90.58409, acc: 68.45000
++Tue Nov 10 15:48:44 2020 Epoch 2, lr: 0.0001000, val loss: 73.87684, acc: 74.15000
++Tue Nov 10 15:49:05 2020 Epoch 3, lr: 0.0001000, val loss: 64.66940, acc: 77.82000
++Tue Nov 10 15:49:27 2020 Epoch 4, lr: 0.0001000, val loss: 58.49766, acc: 80.28000
++Tue Nov 10 15:49:48 2020 Epoch 5, lr: 0.0001000, val loss: 56.58926, acc: 81.21000
++Tue Nov 10 15:50:09 2020 Epoch 6, lr: 0.0001000, val loss: 47.87651, acc: 83.32000
++Tue Nov 10 15:50:29 2020 Epoch 7, lr: 0.0001000, val loss: 51.29552, acc: 83.31000
++Tue Nov 10 15:50:50 2020 Epoch 8, lr: 0.0001000, val loss: 49.28417, acc: 83.36000
++Tue Nov 10 15:51:11 2020 Epoch 9, lr: 0.0001000, val loss: 46.97038, acc: 84.58000
++Tue Nov 10 15:51:32 2020 Epoch 10, lr: 0.0001000, val loss: 39.33393, acc: 87.15000
++Tue Nov 10 15:51:53 2020 Epoch 11, lr: 0.0001000, val loss: 37.45885, acc: 87.39000
++Tue Nov 10 15:52:14 2020 Epoch 12, lr: 0.0001000, val loss: 37.56808, acc: 87.90000
++Tue Nov 10 15:52:34 2020 Epoch 13, lr: 0.0001000, val loss: 35.55919, acc: 88.50000
++Tue Nov 10 15:52:55 2020 Epoch 14, lr: 0.0001000, val loss: 39.41752, acc: 87.15000
++Tue Nov 10 15:53:16 2020 Epoch 15, lr: 0.0001000, val loss: 37.92273, acc: 87.76000
++Tue Nov 10 15:53:37 2020 Epoch 16, lr: 0.0001000, val loss: 35.53233, acc: 88.41000
++Tue Nov 10 15:53:58 2020 Epoch 17, lr: 0.0001000, val loss: 40.94590, acc: 87.46000
++Tue Nov 10 15:54:30 2020 Epoch 0, lr: 0.0001000, val loss: 120.51537, acc: 57.61000
++Tue Nov 10 15:54:54 2020 Epoch 1, lr: 0.0001000, val loss: 79.40250, acc: 72.37000
++Tue Nov 10 15:55:18 2020 Epoch 2, lr: 0.0001000, val loss: 67.52306, acc: 77.01000
++Tue Nov 10 15:55:42 2020 Epoch 3, lr: 0.0001000, val loss: 75.74384, acc: 75.46000
++Tue Nov 10 15:56:07 2020 Epoch 4, lr: 0.0001000, val loss: 56.20790, acc: 81.33000
++Tue Nov 10 15:56:31 2020 Epoch 5, lr: 0.0001000, val loss: 48.61974, acc: 83.30000
++Tue Nov 10 15:56:56 2020 Epoch 6, lr: 0.0001000, val loss: 46.89533, acc: 84.08000
++Tue Nov 10 15:57:20 2020 Epoch 7, lr: 0.0001000, val loss: 48.46605, acc: 83.85000
++Tue Nov 10 15:57:44 2020 Epoch 8, lr: 0.0001000, val loss: 42.30675, acc: 85.94000
++Tue Nov 10 15:58:09 2020 Epoch 9, lr: 0.0001000, val loss: 41.87125, acc: 85.72000
++Tue Nov 10 15:58:33 2020 Epoch 10, lr: 0.0001000, val loss: 39.21815, acc: 86.92000
++Tue Nov 10 15:58:58 2020 Epoch 11, lr: 0.0001000, val loss: 39.28681, acc: 86.73000
++Tue Nov 10 15:59:22 2020 Epoch 12, lr: 0.0001000, val loss: 37.12416, acc: 87.90000
++Tue Nov 10 15:59:46 2020 Epoch 13, lr: 0.0001000, val loss: 36.78698, acc: 87.69000
++Tue Nov 10 16:00:09 2020 Epoch 14, lr: 0.0001000, val loss: 35.58684, acc: 88.11000
++Tue Nov 10 16:00:33 2020 Epoch 15, lr: 0.0001000, val loss: 46.47980, acc: 85.80000
++Tue Nov 10 16:00:57 2020 Epoch 16, lr: 0.0001000, val loss: 35.23893, acc: 89.10000
++Tue Nov 10 16:01:21 2020 Epoch 17, lr: 0.0001000, val loss: 33.17742, acc: 89.41000
++Tue Nov 10 16:01:45 2020 Epoch 18, lr: 0.0001000, val loss: 34.99656, acc: 89.05000
++Tue Nov 10 16:02:08 2020 Epoch 19, lr: 0.0001000, val loss: 35.99895, acc: 88.77000
++Tue Nov 10 16:02:31 2020 Epoch 20, lr: 0.0001000, val loss: 34.50597, acc: 89.42000
++Tue Nov 10 16:02:54 2020 Epoch 21, lr: 0.0000100, val loss: 33.90703, acc: 89.55000
++Tue Nov 10 16:04:03 2020 Epoch 0, lr: 0.0001000, val loss: 102.08564, acc: 63.74000
++Tue Nov 10 16:04:38 2020 Epoch 1, lr: 0.0001000, val loss: 100.04754, acc: 66.90000
++Tue Nov 10 16:05:13 2020 Epoch 2, lr: 0.0001000, val loss: 65.26475, acc: 77.43000
++Tue Nov 10 16:05:48 2020 Epoch 3, lr: 0.0001000, val loss: 63.43835, acc: 78.36000
++Tue Nov 10 16:06:22 2020 Epoch 4, lr: 0.0001000, val loss: 53.80874, acc: 81.75000
+diff --git a/train_cifar10.py b/train_cifar10.py
+index 698ebe5..e7f9c28 100644
+--- a/train_cifar10.py
++++ b/train_cifar10.py
+@@ -41,6 +41,12 @@ parser.add_argument('--patch', default='4', type=int)
+ parser.add_argument('--cos', action='store_true', help='Train with cosine annealing scheduling')
+ args = parser.parse_args()
+ 
++# take in args
++import wandb
++wandb.init(project="cifar10-challange",
++           name="{}_lr{}".format(args.net, args.lr))
++wandb.config.update(args)
++
+ if args.cos:
+     from warmup_scheduler import GradualWarmupScheduler
+ if args.aug:
+@@ -66,10 +72,10 @@ transform_test = transforms.Compose([
+ ])
+ 
+ trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)
+-trainloader = torch.utils.data.DataLoader(trainset, batch_size=bs, shuffle=True, num_workers=8)
++trainloader = torch.utils.data.DataLoader(trainset, batch_size=bs, shuffle=True, num_workers=0)
+ 
+ testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform_test)
+-testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=8)
++testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=0)
+ 
+ classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+ 
+@@ -127,7 +133,12 @@ if not args.cos:
+ else:
+     scheduler_cosine = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.n_epochs-1)
+     scheduler = GradualWarmupScheduler(optimizer, multiplier=10, total_epoch=1, after_scheduler=scheduler_cosine)
+-    
++
++if args.cos:
++    wandb.config.scheduler = "cosine"
++else:
++    wandb.config.scheduler = "ReduceLROnPlateau"
++
+ ##### Training
+ def train(epoch):
+     print('\nEpoch: %d' % epoch)
+@@ -201,6 +212,8 @@ def test(epoch):
+ 
+ list_loss = []
+ list_acc = []
++
++wandb.watch(net)
+ for epoch in range(start_epoch, args.n_epochs):
+     trainloss = train(epoch)
+     val_loss, acc = test(epoch)
+@@ -211,11 +224,15 @@ for epoch in range(start_epoch, args.n_epochs):
+     list_loss.append(val_loss)
+     list_acc.append(acc)
+     
++    wandb.log({'epoch': epoch, 'train_loss': trainloss, 'val_loss': val_loss, "val_acc": acc})
++
+     # write as csv for analysis
+     with open(f'log/log_{args.net}_patch{args.patch}.csv', 'w') as f:
+         writer = csv.writer(f, lineterminator='\n')
+         writer.writerow(list_loss) 
+         writer.writerow(list_acc) 
+     print(list_loss)
+-    
++
++# writeout wandb
++wandb.save("wandb_{}.h5".format(args.net))
+     
