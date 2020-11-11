@@ -53,10 +53,10 @@ wandb.init(project="cifar10-challange",
            name=watermark)
 wandb.config.update(args)
 
-if args.cos:
-    from warmup_scheduler import GradualWarmupScheduler
 if args.aug:
-    import albumentations
+    from torchvision.transforms import transforms
+    from aug.randomaug import RandAugment
+    
 bs = int(args.bs)
 
 use_amp = args.amp
@@ -79,13 +79,21 @@ transform_test = transforms.Compose([
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
 ])
 
-trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)
+if args.aug:
+    # Add RandAugment with N, M(hyperparameter)
+    N = 2; M = 14;
+    transform_train.transforms.insert(0, RandAugment(N, M))
+    
+trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)   
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=bs, shuffle=True, num_workers=8)
 
 testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=8)
 
 classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+
+# Setup augments
+
 
 # Model
 print('==> Building model..')
@@ -139,8 +147,8 @@ if not args.cos:
     from torch.optim import lr_scheduler
     scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=3, verbose=True, min_lr=1e-3*1e-5, factor=0.1)
 else:
-    scheduler_cosine = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.n_epochs-1)
-    scheduler = GradualWarmupScheduler(optimizer, multiplier=10, total_epoch=1, after_scheduler=scheduler_cosine)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.n_epochs)
+    # start with 1/10 lr and do cosine annealing afterwards
 
 if args.cos:
     wandb.config.scheduler = "cosine"
@@ -222,14 +230,19 @@ def test(epoch):
 list_loss = []
 list_acc = []
 
+# monitor network
 wandb.watch(net)
-for epoch in range(start_epoch, args.n_epochs):
-    start = time.time()
-    trainloss = train(epoch)
-    val_loss, acc = test(epoch)
-    
+# this zero gradient update is needed to avoid a warning message, issue #8.
+optimizer.zero_grad()
+optimizer.step()
+for epoch in range(args.n_epochs):
     if args.cos:
-        scheduler.step(epoch-1)
+        scheduler.step()
+    start = time.time()
+    # train
+    trainloss = train(epoch)
+    # validate
+    val_loss, acc = test(epoch)
     
     list_loss.append(val_loss)
     list_acc.append(acc)
@@ -244,6 +257,7 @@ for epoch in range(start_epoch, args.n_epochs):
         writer.writerow(list_loss) 
         writer.writerow(list_acc) 
     print(list_loss)
+    
 
 # writeout wandb
 wandb.save("wandb_{}.h5".format(args.net))
